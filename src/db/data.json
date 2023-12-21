@@ -1,0 +1,40 @@
+{
+  "profiles": [
+    {
+      "profileId": "fem-001",
+      "name": "Victor Crest",
+      "age": 26,
+      "location": "London",
+      "followers": "80k",
+      "likes": "803K",
+      "photos": "1.4k",
+      "profilePhoto": "../src/asset/image-victor.jpg",
+      "coverPhoto": "../src/asset/bg-pattern-card.svg",
+      "backgroundColor": "darkCyan"
+    },
+    {
+      "profileId": "fem-002",
+      "name": "Eva Johnson",
+      "age": 30,
+      "location": "New York",
+      "followers": "120k",
+      "likes": "1.2M",
+      "photos": "2.5k",
+      "profilePhoto": "../src/asset/image-eva.jpg",
+      "coverPhoto": "../src/asset/bg-pattern-eva.svg",
+      "backgroundColor": "hsl(220, 60%, 50%)"
+    },
+    {
+      "profileId": "fem-003",
+      "name": "Alex Turner",
+      "age": 28,
+      "location": "San Francisco",
+      "followers": "90k",
+      "likes": "900K",
+      "photos": "1.8k",
+      "profilePhoto": "../src/asset/image-alex.jpg",
+      "coverPhoto": "../src/asset/bg-pattern-alex.svg",
+      "backgroundColor": "hsl(120, 80%, 45%)"
+    }
+  ]
+}
