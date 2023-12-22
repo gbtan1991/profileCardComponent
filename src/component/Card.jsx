@@ -12,7 +12,7 @@ const Card = ({ profile }) => {
   };
 
   return (
-    <div className="h-screen grid place-content-center bg-darkCyan">
+    <div className="h-screen grid place-content-center">
       <div className="flex flex-col items-center  w-[350px] bg-white  rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl ">
         <div className="flex flex-col items-center relative">
           <img
