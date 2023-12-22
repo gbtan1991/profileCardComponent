@@ -15,8 +15,8 @@ export default {
       },
 
       backgroundImage: {
-        bgTop: "./src/assets/images/bg-pattern-top.svg",
-        bgBottom: "./src/assets/images/bg-pattern-bottom.svg",
+        bgTop: "./bg-pattern-top.svg",
+        bgBottom: "./bg-pattern-bottom.svg",
       },
     },
   },

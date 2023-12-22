@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from "react";
 import Card from "./component/Card";
-import bg1 from "./assets/images/bg-pattern-top.svg";
-import bg2 from "./assets/images/bg-pattern-bottom.svg";
+import bg1 from "../public/bg-pattern-top.svg";
+import bg2 from "../public/bg-pattern-bottom.svg";
 
 function App() {
   const [profileData] = useState([
     {
-      "profileId": "fem-001",
-      "name": "Victor Crest",
-      "age": 26,
-      "location": "London",
-      "followers": 80000,
-      "likes": 802652,
-      "photos": 1426,
-      "profilePhoto": "./image-victor.jpg",
-      "coverPhoto": "./bg-pattern-card.svg"
-    }
+      profileId: "fem-001",
+      name: "Victor Crest",
+      age: 26,
+      location: "London",
+      followers: 80000,
+      likes: 802652,
+      photos: 1426,
+      profilePhoto: "./image-victor.jpg",
+      coverPhoto: "./bg-pattern-card.svg",
+    },
     // Add more profiles as needed
   ]);
 
@@ -23,8 +23,7 @@ function App() {
     (profile) => profile.profileId === "fem-001"
   );
 
-  console.log(getPeople)
-
+  console.log(getPeople);
 
   // const [profileData, setProfileData] = useState(null);
 
@@ -53,11 +52,11 @@ function App() {
     <div className="relative w-screen h-screen overflow-hidden bg-darkCyan">
       <img
         src={bg1}
-        className="absolute  opacity-70 -left-1/2 -top-32 sm:-left-72 sm:-top-1/2"
+        className="absolute z-40  -left-1/2 -top-32 sm:-left-72 sm:-top-1/2"
       />
       <img
         src={bg2}
-        className="absolute opacity-70 -right-1/2 -bottom-32  sm:-right-72 sm:-bottom-1/2"
+        className="absolute z-40 -right-1/2 -bottom-32  sm:-right-72 sm:-bottom-1/2"
       />
       <div className="absolute inset-0 z-10 ">
         <Card profile={getPeople} />
