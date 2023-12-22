@@ -4,29 +4,50 @@ import bg1 from "./assets/images/bg-pattern-top.svg";
 import bg2 from "./assets/images/bg-pattern-bottom.svg";
 
 function App() {
-  const [profileData, setProfileData] = useState(null);
+  const [profileData] = useState([
+    {
+      "profileId": "fem-001",
+      "name": "Victor Crest",
+      "age": 26,
+      "location": "London",
+      "followers": 80000,
+      "likes": 802652,
+      "photos": 1426,
+      "profilePhoto": "../src/assets/images/image-victor.jpg",
+      "coverPhoto": "../src/assets/images/bg-pattern-card.svg"
+    }
+    // Add more profiles as needed
+  ]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("../src/db/data.json");
-        const data = await response.json();
-        setProfileData(data.profiles);
-      } catch (error) {
-        console.error("Error fetching data: ", error);
-      }
-    };
-    fetchData();
-  }, []);
-
-  if (!profileData) {
-    return;
-    <div> Loading..</div>;
-  }
-  console.log(profileData);
   const getPeople = profileData.find(
     (profile) => profile.profileId === "fem-001"
   );
+
+
+
+  // const [profileData, setProfileData] = useState(null);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch("../src/db/data.json");
+  //       const data = await response.json();
+  //       setProfileData(data.profiles);
+  //     } catch (error) {
+  //       console.error("Error fetching data: ", error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
+
+  // if (!profileData) {
+  //   return;
+  //   <div> Loading..</div>;
+  // }
+  // console.log(profileData);
+  // const getPeople = profileData.find(
+  //   (profile) => profile.profileId === "fem-001"
+  // );
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-darkCyan">
       <img
