@@ -13,8 +13,8 @@ function App() {
       "followers": 80000,
       "likes": 802652,
       "photos": 1426,
-      "profilePhoto": "./src/assets/images/image-victor.jpg",
-      "coverPhoto": "./src/assets/images/bg-pattern-card.svg"
+      "profilePhoto": "./image-victor.jpg",
+      "coverPhoto": "./bg-pattern-card.svg"
     }
     // Add more profiles as needed
   ]);
@@ -23,6 +23,7 @@ function App() {
     (profile) => profile.profileId === "fem-001"
   );
 
+  console.log(getPeople)
 
 
   // const [profileData, setProfileData] = useState(null);
