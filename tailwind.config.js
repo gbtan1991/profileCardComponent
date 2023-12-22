@@ -13,6 +13,11 @@ export default {
       fontFamily: {
         theme: "Kumbh Sans, san-serif",
       },
+
+      backgroundImage: {
+        bgTop : './src/assets/images/bg-pattern-top.svg',
+        bgBottom : './src/assets/images/bg-pattern-bottom.svg'
+      }
     },
   },
   plugins: [],

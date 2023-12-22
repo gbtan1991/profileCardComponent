@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "./component/Card";
+import bg1 from "./assets/images/bg-pattern-top.svg";
+import bg2 from "./assets/images/bg-pattern-bottom.svg";
 
 function App() {
   const [profileData, setProfileData] = useState(null);
@@ -17,21 +19,21 @@ function App() {
     fetchData();
   }, []);
 
-  
-
   if (!profileData) {
     return;
     <div> Loading..</div>;
   }
 
-  const getPeople = profileData.find(profile => profile.profileId === 'fem-001')
-  
-  
-
-
+  const getPeople = profileData.find(
+    (profile) => profile.profileId === "fem-001"
+  );
   return (
-    <div>
-      <Card profile={getPeople} />
+    <div className="relative w-screen h-screen overflow-hidden bg-darkCyan">
+      <img src={bg1} className="absolute  opacity-70 -left-1/2 -top-32 sm:-left-72 sm:-top-1/2" />
+      <img src={bg2} className="absolute opacity-70 -right-1/2 -bottom-32  sm:-right-72 sm:-bottom-1/2" />
+      <div className="absolute inset-0 z-10 ">
+        <Card profile={getPeople} />
+      </div>
     </div>
   );
 }
