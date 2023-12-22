@@ -17,7 +17,7 @@ function App() {
     fetchData();
   }, []);
 
-  console.log(profileData);
+  
 
   if (!profileData) {
     return;
@@ -25,6 +25,8 @@ function App() {
   }
 
   const getPeople = profileData.find(profile => profile.profileId === 'fem-001')
+  
+  
 
 
   return (
