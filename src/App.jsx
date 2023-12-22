@@ -23,14 +23,20 @@ function App() {
     return;
     <div> Loading..</div>;
   }
-
+  console.log(profileData);
   const getPeople = profileData.find(
     (profile) => profile.profileId === "fem-001"
   );
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-darkCyan">
-      <img src={bg1} className="absolute  opacity-70 -left-1/2 -top-32 sm:-left-72 sm:-top-1/2" />
-      <img src={bg2} className="absolute opacity-70 -right-1/2 -bottom-32  sm:-right-72 sm:-bottom-1/2" />
+      <img
+        src={bg1}
+        className="absolute  opacity-70 -left-1/2 -top-32 sm:-left-72 sm:-top-1/2"
+      />
+      <img
+        src={bg2}
+        className="absolute opacity-70 -right-1/2 -bottom-32  sm:-right-72 sm:-bottom-1/2"
+      />
       <div className="absolute inset-0 z-10 ">
         <Card profile={getPeople} />
       </div>
